@@ -1,0 +1,24 @@
+{
+  "id": "19a19ec7-056d-4680-8e02-edf461ea3da1",
+  "user": "19a19ec7-056d-4680-8e02-edf461ea3da1",
+  "host": "localhost",
+  "port": 3569,
+  "label": "cidr-js-flow",
+  "name": "cidr-js-noflo",
+  "description": "",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/krg7880/cidr-js-noflo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/krg7880/cidr-js-noflo/issues"
+  },
+  "homepage": "https://github.com/krg7880/cidr-js-noflo"
+}
