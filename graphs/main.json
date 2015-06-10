@@ -8,6 +8,74 @@
     "inports": {},
     "outports": {},
     "groups": [],
-    "processes": {},
-    "connections": []
+    "processes": {
+        "filesystem/ReadFile_dbbyo": {
+            "component": "filesystem/ReadFile",
+            "metadata": {
+                "label": "filesystem/ReadFile",
+                "x": 216,
+                "y": 216,
+                "width": 72,
+                "height": 72
+            }
+        },
+        "core/Output_ck2c1": {
+            "component": "core/Output",
+            "metadata": {
+                "label": "core/Output",
+                "x": 540,
+                "y": 216,
+                "width": 72,
+                "height": 72
+            }
+        },
+        "core/MakeFunction_z70xv": {
+            "component": "core/MakeFunction",
+            "metadata": {
+                "label": "core/MakeFunction",
+                "x": 720,
+                "y": 252,
+                "width": 72,
+                "height": 72
+            }
+        }
+    },
+    "connections": [
+        {
+            "src": {
+                "process": "filesystem/ReadFile_dbbyo",
+                "port": "out"
+            },
+            "tgt": {
+                "process": "core/Output_ck2c1",
+                "port": "in"
+            },
+            "metadata": {}
+        },
+        {
+            "src": {
+                "process": "core/Output_ck2c1",
+                "port": "out"
+            },
+            "tgt": {
+                "process": "core/MakeFunction_z70xv",
+                "port": "in"
+            },
+            "metadata": {}
+        },
+        {
+            "data": "utf-8",
+            "tgt": {
+                "process": "filesystem/ReadFile_dbbyo",
+                "port": "encoding"
+            }
+        },
+        {
+            "data": "package.json",
+            "tgt": {
+                "process": "filesystem/ReadFile_dbbyo",
+                "port": "in"
+            }
+        }
+    ]
 }
